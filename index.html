@@ -48,14 +48,15 @@
 
         // Handle click to select file
         body.addEventListener('click', () => {
-            const input = document.createElement('input');
-            input.type = 'file';
-            input.accept = 'image/*';
-            input.onchange = (e) => {
-                const file = e.target.files[0];
-                handleFiles([file]);
-            };
-            input.click();
+            message.style.display = 'none';
+            // const input = document.createElement('input');
+            // input.type = 'file';
+            // input.accept = 'image/*';
+            // input.onchange = (e) => {
+            //     const file = e.target.files[0];
+            //     handleFiles([file]);
+            // };
+            // input.click();
         });
 
         // Handle paste event
